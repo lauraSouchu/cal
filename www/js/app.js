@@ -45,4 +45,16 @@ $scope.playVideo = function() {
  $scope.showModal('templates/video-popover.html');
 }
 
+$scope.allImages = [{
+ 'src' : 'img/pdf-1.jpg'
+ }, {
+ 'src' : 'img/pdf-2.jpg'
+ }];
+
+ $scope.showImages = function(index) {
+ $scope.activeSlide = index;
+ $scope.showModal('templates/image-popover.html');
+ }
+
+
 })
